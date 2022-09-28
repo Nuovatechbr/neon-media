@@ -1,0 +1,92 @@
+@import "icons";
+
+:root {
+    --nm-btn-midia-bg: #0063c6;
+    --nm-btn-midia-bgh: #0481ff;
+    --nm-btn-midia-color: #fff;
+}
+
+@media all {
+    .nm-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: fit-content;
+        position: fixed;
+        z-index: 99;
+
+        // Interação dos espaçamentos da janela flutuante
+        @for $i from 1 through 4 {
+            // Espaçamento
+            $padding: $i * 5;
+
+            &.nm-pos-top-left-#{$padding} {
+                left: #{$padding}px;
+                top: #{$padding}px;
+            }
+
+            &.nm-pos-top-right-#{$padding} {
+                right: #{$padding}px;
+                top: #{$padding}px;
+            }
+
+            &.nm-pos-bottom-left-#{$padding} {
+                bottom: #{$padding}px;
+                left: #{$padding}px;
+                flex-direction: column-reverse;
+            }
+
+            &.nm-pos-bottom-right-#{$padding} {
+                bottom: #{$padding}px;
+                right: #{$padding}px;
+                flex-direction: column-reverse;
+            }
+
+            nav.nm-container-media {
+                display: none;
+                height: auto;
+                width: 60px;
+
+                &.active {
+                    display: block;
+                }
+            }
+        }
+
+        button.nm-btn-action.active {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            color: #000;
+            filter: opacity(50%);
+            font-size: 20px;
+            transition: ease-in-out 0.3s;
+
+            &:hover {
+                filter: opacity(100%);
+                font-size: 30px;
+                transform: rotate(90deg);
+            }
+        }
+
+        button.nm-btn-action,
+        button.nm-btn-media {
+            background-color: var(--nm-btn-midia-bg);
+            border: 0;
+            border-radius: 100%;
+            box-shadow: 0px 0px 1px 1px #999999 !important;
+            color: var(--nm-btn-midia-color);
+            cursor: pointer;
+            font-size: 48px;
+            height: 60px;
+            margin: 5px 0px;
+            transform: scale(0.9);
+            width: 60px;
+
+            &:hover {
+                background-color: var(--nm-btn-midia-bgh);
+                transform: scale(1);
+                transition: ease-in-out 0.3s;
+            }
+        }
+    }
+}

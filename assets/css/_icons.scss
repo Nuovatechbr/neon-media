@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'nm';
+  src:  
+    url('../fonts/nm.woff?ue3aam') format('woff'),
+    url('../fonts/nm.svg?ue3aam#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="nm-icon-"], [class*=" nm-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'nm' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nm-icon-phone:before {
+  content: "\e900";
+}
+.nm-icon-chat:before {
+  content: "\e901";
+}
+.nm-icon-instagram:before {
+  content: "\e902";
+}
+.nm-icon-facebook:before {
+  content: "\e903";
+}
+.nm-icon-email:before {
+  content: "\e904";
+}
+.nm-icon-telegram:before {
+  content: "\e905";
+}
+.nm-icon-whatsapp:before {
+  content: "\e906";
+}
+.nm-icon-cross:before {
+  content: "\e907";
+}
