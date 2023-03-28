@@ -1,0 +1,14 @@
+{
+    "name": "nuovatech/neonmedia",
+    "description": "Show in your web application a float social media links.",
+    "type": "project",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Eduardo Marinho"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "version": "1.0.2"
+}
